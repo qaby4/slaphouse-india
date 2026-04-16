@@ -4,144 +4,143 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>SlapHouse India | India's First Slap Fighting Federation</title>
+<title>SlapHouse India | First Slap Fighting Federation in India</title>
 
-<meta name="description" content="SlapHouse India is launching India's first regulated slap fighting federation. Fighters, sponsors, and franchise owners apply now.">
+<meta name="description" content="SlapHouse India is the first structured slap fighting federation in India. Apply as a fighter, sponsor, or franchise owner and be part of a new combat sport.">
+<meta name="keywords" content="slap fighting India, combat sports India, MMA India, boxing India, slap competition, fight league India">
 
 <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
 
-<style>
-* { margin:0; padding:0; box-sizing:border-box; }
+<link rel="icon" type="image/png" href="logo.png">
 
+<style>
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
 body {
     font-family: 'Roboto', sans-serif;
-    background: #0a0a0a;
+    background: radial-gradient(circle at center, #0a0a0a 0%, #000000 100%);
     color: #fff;
-    overflow-x: hidden;
+}
+
+/* GLOBAL GLOW EFFECT */
+body::before {
+    content: "";
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(180,0,0,0.08), transparent 70%);
+    pointer-events: none;
 }
 
 /* HEADER */
 header {
-    background: rgba(0,0,0,0.95);
-    padding: 15px;
+    padding: 20px;
     text-align: center;
-    border-bottom: 1px solid #ff2e2e;
+    border-bottom: 1px solid rgba(255,0,0,0.3);
+    background: rgba(0,0,0,0.9);
 }
 
-.logo-box {
-    display: inline-block;
-    padding: 10px 20px;
-    border: 1px solid rgba(255,46,46,0.4);
-    box-shadow: 0 0 20px rgba(255,46,46,0.2);
-    border-radius: 6px;
-    background: #0a0a0a;
-}
-
-.logo-box img {
-    width: 180px;
-    filter: drop-shadow(0 0 10px rgba(255,46,46,0.5));
-    animation: pulse 2.5s infinite;
-}
-
-@keyframes pulse {
-    0% { transform: scale(1); }
-    50% { transform: scale(1.05); }
-    100% { transform: scale(1); }
+.logo {
+    width: 200px;
+    filter: drop-shadow(0 0 15px rgba(255,0,0,0.6));
 }
 
 /* HERO */
 .hero {
-    height: 90vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background: radial-gradient(circle at center, #1a1a1a 0%, #000 80%);
     text-align: center;
-    padding: 20px;
+    padding: 80px 20px;
 }
 
 .hero h1 {
     font-family: 'Oswald', sans-serif;
     font-size: 60px;
-    color: #ff2e2e;
-    text-shadow: 0 0 15px rgba(255,46,46,0.6);
-    letter-spacing: 3px;
+    color: #ff1a1a;
+    text-shadow: 0 0 20px rgba(255,0,0,0.7);
 }
 
 .hero p {
     margin-top: 15px;
-    font-size: 20px;
     color: #ccc;
-    max-width: 600px;
+    font-size: 18px;
 }
 
-.hero span {
-    display: block;
-    margin-top: 10px;
-    font-size: 16px;
-    color: #ff2e2e;
-}
-
-/* BUTTON */
-.btn {
+.hero .btn {
     margin-top: 25px;
+    display: inline-block;
     padding: 14px 30px;
-    background: #ff2e2e;
-    color: white;
+    background: linear-gradient(45deg, #ff0000, #800000);
+    border-radius: 6px;
     text-decoration: none;
+    color: #fff;
     font-weight: bold;
-    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(255,0,0,0.5);
     transition: 0.3s;
-    box-shadow: 0 0 15px rgba(255,46,46,0.4);
 }
 
-.btn:hover {
-    background: #cc0000;
+.hero .btn:hover {
     transform: scale(1.05);
+}
+
+/* STRIP */
+.strip {
+    background: linear-gradient(90deg, #800000, #ff0000, #800000);
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
 }
 
 /* SECTION */
 .section {
-    padding: 70px 20px;
+    padding: 60px 20px;
     text-align: center;
 }
 
 .section h2 {
     font-family: 'Oswald', sans-serif;
-    margin-bottom: 20px;
-    font-size: 36px;
+    margin-bottom: 30px;
+    color: #ff1a1a;
 }
 
-/* CARDS */
+/* CARD GRID */
 .cards {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
+/* CARD STYLE */
 .card {
-    background: #111;
+    background: linear-gradient(145deg, #111, #000);
     margin: 15px;
     padding: 25px;
-    width: 300px;
-    border-radius: 8px;
-    border: 1px solid #222;
+    width: 280px;
+    border-radius: 10px;
+    border: 1px solid rgba(255,0,0,0.2);
+    box-shadow: inset 0 0 20px rgba(255,0,0,0.1),
+                0 0 20px rgba(255,0,0,0.15);
     transition: 0.3s;
 }
 
 .card:hover {
-    border-color: #ff2e2e;
-    transform: translateY(-6px);
+    transform: translateY(-8px) scale(1.02);
+    border-color: #ff0000;
+    box-shadow: 0 0 25px rgba(255,0,0,0.4);
 }
 
-/* RULES */
-.rules {
-    max-width: 700px;
-    margin: auto;
-    text-align: left;
-    color: #ccc;
-    line-height: 1.7;
+.card h3 {
+    margin-bottom: 10px;
+    color: #ff3333;
+}
+
+.card p {
+    color: #bbb;
 }
 
 /* FORM */
@@ -150,93 +149,91 @@ form {
     margin: auto;
 }
 
-input, textarea, select {
+input, select, textarea {
     width: 100%;
     padding: 12px;
     margin: 10px 0;
-    border-radius: 5px;
-    border: none;
-    background: #111;
+    background: #0a0a0a;
+    border: 1px solid rgba(255,0,0,0.3);
     color: #fff;
+    border-radius: 5px;
 }
 
 button {
     width: 100%;
     padding: 14px;
-    background: #ff2e2e;
+    background: linear-gradient(45deg, #ff0000, #800000);
     border: none;
+    color: white;
     font-weight: bold;
     cursor: pointer;
 }
 
 button:hover {
-    background: #cc0000;
+    box-shadow: 0 0 15px rgba(255,0,0,0.5);
 }
 
 /* FOOTER */
 footer {
-    padding: 20px;
     text-align: center;
+    padding: 20px;
+    border-top: 1px solid rgba(255,0,0,0.3);
     background: #000;
-    border-top: 1px solid #ff2e2e;
+    color: #888;
 }
+
 </style>
 </head>
 
 <body>
 
 <header>
-    <div class="logo-box">
-        <img src="logo.png" alt="SlapHouse India Logo">
-    </div>
+    <img src="logo.png" alt="SlapHouse India Logo" class="logo">
 </header>
 
 <section class="hero">
     <h1>SLAPHOUSE INDIA</h1>
-    <p>India’s First Official Slap Fighting Federation is being built.</p>
-    <span>Fighters • Sponsors • Franchise Owners</span>
-
-    <a href="#fighter" class="btn">APPLY NOW</a>
+    <p>India’s First Structured Slap Fighting Federation</p>
+    <a href="#apply" class="btn">ENTER THE ARENA</a>
 </section>
 
-<section class="section">
-    <h2>THIS IS NOT ENTERTAINMENT</h2>
-    <p>This is a structured combat sport. Regulated rules. Controlled environment. Real athletes.</p>
-</section>
+<div class="strip">
+    REGISTRATIONS OPEN • FIGHTERS WANTED • FIRST EVENT COMING
+</div>
 
 <section class="section">
-    <h2>WHO CAN JOIN</h2>
+    <h2>JOIN THE MOVEMENT</h2>
 
     <div class="cards">
         <div class="card">
             <h3>FIGHTERS</h3>
-            <p>MMA, boxing, and strength athletes.</p>
+            <p>MMA, boxing, strength athletes. Apply and compete.</p>
         </div>
 
         <div class="card">
             <h3>SPONSORS</h3>
-            <p>Be early in India’s next combat sport.</p>
+            <p>Early access to a new combat sport market.</p>
         </div>
 
         <div class="card">
             <h3>FRANCHISE</h3>
-            <p>Own a team. Build the league.</p>
+            <p>Own teams. Build India’s first slap league.</p>
         </div>
     </div>
 </section>
 
 <section class="section">
-    <h2>RULES DEFINE THE SPORT</h2>
-    <div class="rules">
-        <p>- Open-hand strikes only</p>
-        <p>- Turn-based rounds</p>
-        <p>- Weight categories enforced</p>
-        <p>- Medical supervision mandatory</p>
-        <p>- Referee stoppage for safety</p>
+    <h2>SPORT STRUCTURE</h2>
+
+    <div class="cards">
+        <div class="card"><p>Open-hand strikes only</p></div>
+        <div class="card"><p>Turn-based rounds</p></div>
+        <div class="card"><p>Weight categories</p></div>
+        <div class="card"><p>Medical supervision</p></div>
     </div>
 </section>
 
-<section class="section" id="fighter">
+<section class="section" id="apply">
     <h2>FIGHTER REGISTRATION</h2>
 
     <form>
@@ -258,8 +255,10 @@ footer {
 </section>
 
 <section class="section">
-    <h2>FIRST EVENT COMING</h2>
-    <p>Closed pilot tournament. Fighters will be selected from registrations.</p>
+    <h2>ABOUT SLAPHOUSE INDIA</h2>
+    <p style="max-width:700px;margin:auto;color:#ccc;">
+        SlapHouse India is the first regulated slap fighting federation in India, bringing structure, rules, and competitive integrity to an emerging combat sport.
+    </p>
 </section>
 
 <footer>
